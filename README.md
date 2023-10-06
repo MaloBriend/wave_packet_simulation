@@ -91,4 +91,6 @@ Fig 3. Interface de notre programme
 
 ---
 
+Acknowledgement : Ronan Piedevache
+
 [1] Mehdi Ayouz et al. Les Fondamentaux de La Mécanique Quantique Sous Python : Rappel de Cours et Exercices d’application Avec Programmes Inclus. HAL CCSD, 1er jan. 2020.
