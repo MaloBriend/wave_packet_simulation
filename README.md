@@ -16,7 +16,7 @@ H\phi(x) = E\phi(x)
 où $E$ est l'énergie de la particule.
 
 <img src="https://github.com/MaloBriend/wave_packet_simulation/blob/main/marche_potentiel.png" width="400" />
-Fig 1. Marche de potentiel. Le saut de potentiel de 0 à $V_0$ se fait en x=0.
+Fig 1. Marche de potentiel. Le saut de potentiel se fait en x=0.
 
 - Au niveau de la région 1, la particule n'est soumise à aucun potentiel et se comporte comme une particule libre.
 
@@ -60,11 +60,11 @@ $$\begin{align}
 r=\frac{k_1-ik_2}{k_1+ik_2}~~;~~t=\frac{2k_1}{k_1+ik_2}
 \end{align}$$
 
-*Par la suite, il sera utile de travailler en unité atomique, avec $\hbar = 1$ et $m = 1$.*
+*Par la suite, il sera utile de travailler en unité atomique, avec* $\hbar = 1$ et $m = 1$.
+
 La résolution de ce problème nous permet donc de conclure que :
 - il existe une probabilité non nulle que la particule soit réfléchie lorsque son énergie est supérieure à celle de la marche de potentiel.
 - il existe une probabilité de présence non nulle de la particule dans la région 2 lorsque son énergie est inférieure à celle de la marche de potentiel, ce qui traduit une certaine profondeur de pénétration.
-
 
 L'objectif de notre projet est ainsi de mettre en évidence visuellement ces deux phénomènes, en associant cependant la particule à une fonction d'onde de type paquet d'onde gaussien:
 
@@ -82,7 +82,7 @@ Fig 2. Paquet d'onde gaussien se propageant vers une marche de potentiel.
 Pour ce projet, nous utiliserons le langage de programmation Python muni principalement des bibliothèques *numpy* et *matplotlib*. Pour animer notre projet et le rendre simple à utiliser, nous tirerons profit de *matplotlib.widgets* pour intégrer des sliders et ainsi contrôler certains paramètres. De plus le module *FuncAnimation* permettra d'animer l'ensemble.
 
 ## Mode d'emploi
-Pour utiliser correctement notre programme, il faut s'assurer tout d'abord d'entrer la ligne de commande *\%matplotlib qt* pour visualiser correctement l'animation. Ensuite il faut exécuter le fichier \textit{animation} en s'assurant que le fichier \textit{paquet\_onde} existe bien dans le même dossier.
+Pour utiliser correctement notre programme, il faut s'assurer tout d'abord d'entrer la ligne de commande *\%matplotlib qt* pour visualiser correctement l'animation. Ensuite il faut exécuter le fichier *animation* en s'assurant que le fichier *paquet\_onde* existe bien dans le même dossier.
 
 Par défaut, l'animation affiche la propagation d'un paquet d'onde sur une marche de potentiel. La hauteur de la marche peut être modifiée via le curseur $V_0$, l'animation se mettra à jour automatiquement. Un bouton reset permet de revenir à la position initiale. De plus, grâce aux boutons sur la droite, il est possible de choisir soit l'animation d'un paquet d'onde devant une marche de potentiel, soit la propagation simple d'un paquet d'onde.
 
